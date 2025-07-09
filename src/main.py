@@ -55,7 +55,7 @@ async def definition(ctx: discord.Interaction, word: str): # Function to get the
 """
 Run the bot using its token,
 handling logs using the log handler,
-and logs debug information
+and logs errror information (can also be set to logging.DEBUG for debug info)
 (remember that everything will be inside discord.log)
 """
 bot.run(TOKEN, log_handler=handler, log_level=logging.ERROR)
