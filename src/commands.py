@@ -9,3 +9,6 @@ def get_fact():
 
     content = res.json() # Parse the data to JSON format
     return content["text"] # Extract the text from the JSON
+
+def qotd():
+    pass
