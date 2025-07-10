@@ -52,10 +52,6 @@ async def fun_fact(ctx: discord.Interaction): # Function to retrieve a fun fact 
 async def definition(ctx: discord.Interaction, word: str): # Function to get the dictionary definition of a word
     await ctx.response.send_message(cmds.dictionary(word)) # Reply to the sender with the dictionary definition of the word gotten by dictionary() in commands.py
 
-@bot.tree.command(name="ping", description="Pong!")
-async def ping(ctx): # Function to detect ping (how long it takes to send a request and recieve a response)
-    await ctx.send('Pong! {0}'.format(round(bot.latency, 1)))
-
 """
 Run the bot using its token,
 handling logs using the log handler,
